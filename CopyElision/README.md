@@ -5,11 +5,12 @@
 class MyClass {
    public:
      MyClass(const char* str = "\0") {  //default constructor
-         cout << "Constructor called" << endl;
+         cout << "Constructor" << endl;
       }
       MyClass(const MyClass &my_cls) { //copy constructor
-         cout << "Copy constructor called" << endl;
+         cout << "Copy constructor" << endl;
       }
+      ~MyClass(){cout << "Destructor" << endl;}
 };
 
 MyClass getInstance(){
@@ -28,6 +29,14 @@ int main()
 > $g++ -fno-elide-constructors main.cpp
 
 _MyClass obj1 = "copy class object";_
+
+output:
+Constructor _// MyClass obj (object 1)_
+Copy constructor _// ="copy class object"; (object 2)_
+Destructor
+Destructor
+
+
 
 ## 2. With Copy Elision
 
