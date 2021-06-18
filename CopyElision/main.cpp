@@ -1,8 +1,6 @@
 #include <iostream>
-
 using namespace std;
 
-using namespace std;
 class MyClass {
    public:
       MyClass(const char* str = "\0") {  //default constructor
