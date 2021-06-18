@@ -31,8 +31,8 @@ int main()
 _MyClass obj1 = "copy class object";_
 ```
 output:
-Constructor    `MyClass obj (object 1)` 
-Copy constructor    `="copy class object"; (object 2)`
+Constructor    MyClass obj (object 1)
+Copy constructor    ="copy class object"; (object 2)
 Destructor
 Destructor
 ```
