@@ -1,5 +1,5 @@
 # COPY ELISION
-_class MyClass {
+_class MyClass {_
    public:
       MyClass(const char* str = "\0") {  //default constructor
          cout << "Constructor called" << endl;
