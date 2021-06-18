@@ -29,16 +29,13 @@ int main()
 > $g++ -fno-elide-constructors main.cpp
 
 _MyClass obj1 = "copy class object";_
-
-> output:
->> Constructor    #`MyClass obj (object 1)` 
->> 
->> Copy constructor    #`="copy class object"; (object 2)`
->> 
->> Destructor
->> 
->> Destructor
-
+```
+output:
+Constructor    `MyClass obj (object 1)` 
+Copy constructor    `="copy class object"; (object 2)`
+Destructor
+Destructor
+```
 
 
 ## 2. With Copy Elision
