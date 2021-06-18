@@ -1,5 +1,6 @@
 # COPY ELISION
 ### Mandatory elision of copy/move operations
+#### the compilers are required to omit the copy and move construction of class objects, even if the copy/move constructor and the destructor have observable side-effects. The objects are constructed directly into the storage where they would otherwise be copied/moved to. 
 ```
 class MyClass {
    public:
