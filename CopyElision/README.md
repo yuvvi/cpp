@@ -25,7 +25,7 @@ int main()
     return 0;
 }
 ```
-## 1. Without Copy Elision
+## 1. NO Copy Elision
 > $g++ -fno-elide-constructors main.cpp
 
 _MyClass obj1 = "copy class object";_
@@ -38,5 +38,5 @@ Destructor           //object 1
 ```
 
 
-## 2. With Copy Elision
+## 2. Copy Elision
 
