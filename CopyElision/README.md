@@ -30,7 +30,7 @@ int main()
 
 _MyClass obj1 = "copy class object";_
 ```cpp
-- output:
+-output:
 Constructor          //MyClass obj (object 1)
 Copy constructor     //="copy class object"; (object 2)
 Destructor           //object 2
