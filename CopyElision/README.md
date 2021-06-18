@@ -1,4 +1,5 @@
 # COPY ELISION
+### Mandatory elision of copy/move operations
 ```
 class MyClass {
    public:
@@ -16,6 +17,7 @@ int main()
 }
 ```
 ## 1. Without Copy Elision
+
 
 ## 2. With Copy Elision
 
