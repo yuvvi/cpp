@@ -25,7 +25,7 @@ int main()
 }
 ```
 ## 1. Without Copy Elision
->g++ -fno-elide-constructors main.cpp
+> $g++ -fno-elide-constructors main.cpp
 
 _MyClass obj1 = "copy class object";_
 
