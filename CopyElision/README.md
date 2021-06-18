@@ -1,7 +1,7 @@
 # COPY ELISION
 ### Mandatory elision of copy/move operations
 #### (C++11) The compilers are required to omit the copy and move construction of class objects, even if the copy/move constructor and the destructor have observable side-effects. The objects are constructed directly into the storage where they would otherwise be copied/moved to. 
-```
+```cpp
 class MyClass {
    public:
      MyClass(const char* str = "\0") {  //default constructor
@@ -30,7 +30,7 @@ int main()
 
 _MyClass obj1 = "copy class object";_
 ```cpp
--output:
+Output:
 Constructor          //MyClass obj (object 1)
 Copy constructor     //="copy class object"; (object 2)
 Destructor           //object 2
