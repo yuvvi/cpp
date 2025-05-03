@@ -5,7 +5,9 @@
 #include <vector>
 using namespace std;
 
-void bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(int k) {
+void bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(int k) {\
+    //Time complexity : O (n^2)
+    //Space complexity: O (n)
     vector<int> arr {2,5,1,7,10};
     for (auto i: arr) {
         cout <<" "<<i;
