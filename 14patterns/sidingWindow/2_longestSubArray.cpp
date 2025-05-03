@@ -35,6 +35,29 @@ void bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(int k) {\
     cout << "Max Len :"<<maxLen;
 }
 
+void twoPointer_LongestSubArray(int k) {
+    vector<int> arr {15,5,1,7,10};
+    int left=0, right =0, sum =0, maxLen=0;
+    while (right < arr.size()) {
+        sum = sum + arr[right];
+
+        //if sum > k, shrink left side (shrink only condition based)
+        if (sum > k) {
+            sum = sum - arr[left];
+            left = left +1;
+        }
+        //if sum <=k, get MaxLen
+        if (sum <= k) {
+            maxLen = max(maxLen, (right -left + 1));
+        }
+
+        //expand right side (default)
+        right = right + 1;
+    }
+    
+    cout <<" maxLen: "<<maxLen;
+}
+
 int main() {
     //sum <= k
     int k=14;
