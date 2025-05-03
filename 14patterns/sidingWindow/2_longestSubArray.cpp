@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-void bruteForceAlgo_longestSubArray_OR_subStringWithSizeLessThanEqualK(int k) {
+void bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(int k) {
     vector<int> arr {2,5,1,7,10};
     for (auto i: arr) {
         cout <<" "<<i;
@@ -37,6 +37,6 @@ int main() {
     //sum <= k
     int k=14;
     cout<<" K size to check (sum <= k) :" << k<<endl;
-    bruteForceAlgo_longestSubArray_OR_subStringWithSizeLessThanEqualK(k);
+    bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(k);
     return 0;
 }
