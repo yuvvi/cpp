@@ -160,6 +160,9 @@ int getLongestSubString_bruteForce() {
 //  C A D B |  Z A B C D
 //  Update maxLen = 5
 
+//Time conmplexity O(n)
+//Space complexity O(256)
+
 int getLongSubStringOptimized() {
     string str = "cadbzabcd";
     int left=0, right=0, maxLen = 0, len =0;
