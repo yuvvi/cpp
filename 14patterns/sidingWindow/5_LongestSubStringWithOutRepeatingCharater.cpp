@@ -194,6 +194,9 @@ int getLongSubStringOptimized() {
 
 int main() {
     getLongestSubString_bruteForce();
+    getLongSubStringOptimized();
     cout <<"-----END------"<<endl;    
     return 0;
 }
+
+
