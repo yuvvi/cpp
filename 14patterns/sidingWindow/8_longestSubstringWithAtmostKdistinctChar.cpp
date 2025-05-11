@@ -28,8 +28,8 @@ int getLongestSubStringWithKdistinctChar(const string &str, const int k) {
 }
 
 //--------------------OPTIMIZED----------
-//Time complexity : O(N)
-//Space complexity: O(3)
+//Time complexity : O(N) + O log(256)
+//Space complexity: O (256)
 
 int getLongestSubStringWithKdistinctCharOpt(const string &str, const int k) {
     int left=0, right=0, maxLen =0;
