@@ -59,7 +59,7 @@ class Person {
         if (this != &other) {
             delete name;
             name = other.name;
-            other.name = nullptr;
+            *other.name = nullptr;
             cout<< "Move assignment"<<endl;
         }
         return *this;
