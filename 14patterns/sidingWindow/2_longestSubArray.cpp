@@ -63,5 +63,6 @@ int main() {
     int k=14;
     cout<<" K size to check (sum <= k) :" << k<<endl;
     bruteForceAlgo_longestSubArrayWithSizeLessThanEqualK(k);
+    twoPointer_LongestSubArray(k);
     return 0;
 }
