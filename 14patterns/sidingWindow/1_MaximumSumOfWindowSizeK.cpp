@@ -32,6 +32,7 @@ int main() {
     for (r=0; r<k; r++) {
         sum = sum + arr[r];
     }
+    maxSum = sum;
     cout << " sum: "<<sum<<endl;
     
     //traverse through constant k size window
