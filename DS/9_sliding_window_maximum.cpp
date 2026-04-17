@@ -44,7 +44,7 @@ Constraints:
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        vector<int> res(k);
+        vector<int> res;
         deque<int> dq; // deque will store only indexes , front of the queue is always maximum element.
 
         for (int i=0; i < nums.size(); i++) {
@@ -62,8 +62,8 @@ public:
             dq.push_back(i);
 
             //update result
-            if (i > k-1) {
-                res.append(nums[dq.front()])
+            if (i >= k-1) {
+                res.push_back(nums[dq.front()])
             }
         }
         return res;
